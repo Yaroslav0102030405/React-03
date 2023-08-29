@@ -1,31 +1,44 @@
 // Модули
 import React from 'react';
 // Компоненты
-import PaintingList from './components/PaintingList/PaintingList';
-import Panel from './components/Panel/Panel';
-import ColorPicker from './components/ColorPicker/ColorPicker';
-import Container from './components/Container/Container';
-import AppBar from './components/AppBar/AppBar';
+import Counter from './components/Counter/Counter';
+import Dropdown from './components/Dropdown/Dropdown';
+// import PaintingList from './components/PaintingList/PaintingList';
+// import Panel from './components/Panel/Panel';
+// import ColorPicker from './components/ColorPicker/ColorPicker';
+// import Container from './components/Container/Container';
+// import AppBar from './components/AppBar/AppBar';
+
+
 
 // Стили
-import paintings from './paintings.json';
-import './components/PaintingList/PaintingList.css';
-import Notification from './components/Notification/Notification';
+// import paintings from './paintings.json';
+// import './components/PaintingList/PaintingList.css';
+// import Notification from './components/Notification/Notification';
 
-const colorPickerOptions = [
-  { label: 'red', color: '#F44336' },
-  { label: 'green', color: '#4CAF50' },
-  { label: 'blue', color: '#2196F3' },
-  { label: 'grey', color: '#607D8B' },
-  { label: 'pink', color: '#E91E63' },
-  { label: 'indigo', color: '#3F51B5' },
-];
+// const colorPickerOptions = [
+//   { label: 'red', color: '#F44336' },
+//   { label: 'green', color: '#4CAF50' },
+//   { label: 'blue', color: '#2196F3' },
+//   { label: 'grey', color: '#607D8B' },
+//   { label: 'pink', color: '#E91E63' },
+//   { label: 'indigo', color: '#3F51B5' },
+// ];
 
 const App = () => {
   return (
+
     <React.Fragment>
-    <AppBar />
-    <Container>
+    {/* <AppBar /> */}
+    
+    <h1>Состояние компонента</h1>
+    <Counter />
+
+    <h2>Новое</h2>
+
+    <Dropdown />
+    
+    {/* <Container>
       <ColorPicker options={colorPickerOptions} />
 
       <Notification text="Все хорошо" type="error" />
@@ -43,7 +56,7 @@ const App = () => {
 
       <h1>Главный компонент-контейнер приложения</h1>
       <PaintingList paintings={paintings} />
-    </Container>
+    </Container> */}
     </React.Fragment>
   );
 };
