@@ -1,13 +1,14 @@
 // Модули
 import React from 'react';
 // Компоненты
-import Counter from './components/Counter/Counter';
-import Dropdown from './components/Dropdown/Dropdown';
+import Counter from './components/Counter';
+import Dropdown from './components/Dropdown';
 // import PaintingList from './components/PaintingList/PaintingList';
 // import Panel from './components/Panel/Panel';
-// import ColorPicker from './components/ColorPicker/ColorPicker';
+import ColorPicker from './components/ColorPicker';
 // import Container from './components/Container/Container';
 // import AppBar from './components/AppBar/AppBar';
+
 
 
 
@@ -16,18 +17,20 @@ import Dropdown from './components/Dropdown/Dropdown';
 // import './components/PaintingList/PaintingList.css';
 // import Notification from './components/Notification/Notification';
 
-// const colorPickerOptions = [
-//   { label: 'red', color: '#F44336' },
-//   { label: 'green', color: '#4CAF50' },
-//   { label: 'blue', color: '#2196F3' },
-//   { label: 'grey', color: '#607D8B' },
-//   { label: 'pink', color: '#E91E63' },
-//   { label: 'indigo', color: '#3F51B5' },
-// ];
+const colorPickerOptions = [
+  { label: 'red', color: '#F44336' },
+  { label: 'green', color: '#4CAF50' },
+  { label: 'blue', color: '#2196F3' },
+  { label: 'grey', color: '#607D8B' },
+  { label: 'pink', color: '#E91E63' },
+  { label: 'indigo', color: '#3F51B5' },
+];
+
+
+
 
 const App = () => {
   return (
-
     <React.Fragment>
     {/* <AppBar /> */}
     
@@ -37,8 +40,11 @@ const App = () => {
     <h2>Новое</h2>
 
     <Dropdown />
-    
+
+    <ColorPicker options={colorPickerOptions} />
+  
     {/* <Container>
+
       <ColorPicker options={colorPickerOptions} />
 
       <Notification text="Все хорошо" type="error" />
